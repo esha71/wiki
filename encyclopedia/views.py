@@ -94,7 +94,7 @@ def search(request ):
         #         return render(request, "encyclopedia/searchresults.html", {'search': results})
         else:
             return render(request, "encyclopedia/error.html", {
-                "errorMsg": f"your search for page_name '{searchstring}' was not found",
+                "errorMsg": f"your search for '{searchstring}' was not found",
             })
 
 def viewEntry(request, page_name):
